@@ -29,7 +29,7 @@ function App() {
 
           <Route path="/" element={<Page1 formData={formData} setFormData={setFormData}/>} />
 
-          <Route path="/page2" element={<Page2 />} />
+          <Route path="/page2" element={<Page2 formData={formData} setFormData={setFormData}/>} />
           <Route path="/page3" element={<Page3 />} />
           <Route path="/summary" element={<Summary />} />
 
