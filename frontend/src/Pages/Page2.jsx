@@ -19,7 +19,7 @@ const Page2 = ({formData, setFormData}) => {
     navigate("/page3");
   }
 
-  const handleImage = () => {
+  const handleImage = (e) => {
     const file = e.target.files[0];
 
     setFormData({
@@ -82,7 +82,7 @@ const Page2 = ({formData, setFormData}) => {
           )}
         </div>
 
-        <div>
+        <div className='flex justify-between'>
           <button 
             type="button"
             onClick={() => navigate("/")}
